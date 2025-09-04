@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* Apply Outfit font globally */
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+/* Define custom CSS variables for colors */
+:root {
+    --color-primary: #4fbf8b;
+    --color-primary-dull: #44ae7c;
+    --color-primary-soft: #68c4a1;
+}
+
+/* Utility class for buttons with primary color */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-soft);
+}
+
+/* Hide scrollbar for .no-scrollbar class */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
